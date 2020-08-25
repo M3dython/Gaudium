@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+body {
+  background: black;
+  background-image: url(../images/8.jpg);
+  background-size: initial;
+}
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr;
+  grid-template-areas:
+    "nav nav nav navc"
+    "box5 box5 box9 box9"
+    "box4 box4 box1 box1";
+  gap: 5px;
+}
+main {
+  display: contents;
+}
+header {
+  display: contents;
+}
+.title {
+  grid-area: nav;
+  border: 5px solid red;
+  background-image: url(../images/2.jpg);
+  background-size: initial;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cont {
+  grid-area: navc;
+  border: 5px solid red;
+  background-image: url(../images/ContatoGrande.jpg);
+  background-size: initial;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.box5 {
+  grid-area: box5;
+  border: 5px solid red;
+}
+.box4 {
+  grid-area: box4;
+  border: 5px solid red;
+}
+.box9 {
+  grid-area: box9;
+  border: 5px solid red;
+}
+.box1 {
+  grid-area: box1;
+  border: 5px solid red;
+}
