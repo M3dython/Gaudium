@@ -1,59 +1,122 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: 0;
-}
 body {
-  background: black;
-  background-image: url(../images/8.jpg);
-  background-size: initial;
+  background: url(../images/8.jpg);
 }
 .container {
   display: grid;
-  height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 180px 250px 250px;
   grid-template-areas:
-    "nav nav nav navc"
+    "logo logo logo cont"
     "box5 box5 box9 box9"
     "box4 box4 box1 box1";
-  gap: 5px;
+  gap: 10px;
 }
-main {
-  display: contents;
+div {
+  /* border: red solid 5px; */
+  text-align: center;
 }
-header {
-  display: contents;
+
+/* logo and contact area */
+.logo {
+  grid-area: logo;
 }
-.title {
-  grid-area: nav;
-  border: 5px solid red;
-  background-image: url(../images/2.jpg);
-  background-size: initial;
-  background-position: center;
-  background-repeat: no-repeat;
+.logo img {
+  max-width: 400px;
+  border-radius: 20px;
+  margin: 0 0 100 100;
+  box-shadow: 5px 5px 15px 0 rgba(214, 214, 97, 0.2);
 }
 .cont {
-  grid-area: navc;
-  border: 5px solid red;
-  background-image: url(../images/ContatoGrande.jpg);
-  background-size: initial;
-  background-position: center;
-  background-repeat: no-repeat;
+  grid-area: cont;
+  color: #d6a461;
+  font-size: 1.3rem;
 }
+li {
+  list-style: none;
+  margin: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: 5px 5px 15px 0 rgba(214, 214, 97, 0.2);
+}
+li a {
+  color: #d6a461;
+}
+
+/* main page */
 .box5 {
   grid-area: box5;
-  border: 5px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.box4 {
-  grid-area: box4;
-  border: 5px solid red;
+.box5 p {
+  color: #d6a461;
+  text-align: center;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px 0 rgba(214, 214, 97, 0.2);
+}
+.box5 img {
+  display: block;
+  max-width: 150px;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0 rgba(214, 214, 97, 0.2);
 }
 .box9 {
   grid-area: box9;
-  border: 5px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.box9 p {
+  color: #d6a461;
+  text-align: center;
+  margin: auto;
+  min-width: 100px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+.box9 img {
+  display: block;
+  max-width: 150px;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0 rgba(214, 214, 97, 0.2);
+}
+.box4 {
+  grid-area: box4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.box4 p {
+  color: #d6a461;
+  text-align: center;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+.box4 img {
+  max-width: 150px;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0 rgba(214, 214, 97, 0.2);
 }
 .box1 {
   grid-area: box1;
-  border: 5px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.box1 p {
+  color: #d6a461;
+  text-align: center;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+.box1 img {
+  max-width: 150px;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0 rgba(214, 214, 97, 0.2);
 }
